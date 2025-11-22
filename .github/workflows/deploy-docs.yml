@@ -27,7 +27,7 @@ concurrency:
 jobs:
   # Build job
   build:// 1. Import modules
-import { createPublicClient, http } from "starkweb"
+import { mainnet} from "starkweb"
 
 // 2. Set up your client
 const client = createPublicClient({0x5251bea02a3cdd214026bd84da854a097fa1a91919a08cba532f77d3244a620
