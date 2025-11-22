@@ -27,28 +27,15 @@ concurrency:
 jobs:
   # Build job
   build:// 1. Import modules
-import { mainnet} from "starkweb"
+/ .github/workflows/deploy-docs.yml//:
+#  mainnet
+         
+// 2. Set up your client,createPublicClient({0x5251bea02a3cdd214026bd84da854a097fa1a91919a08cba532f77d3244a620  chain: mainnet,
+  transport
+  
+/ .github/workflows/deploy-docs.yml}); 0x5ccd2C34B5143E7D2A6B604e314888856FA81ac1
 
-// 2. Set up your client
-const client = createPublicClient({0x5251bea02a3cdd214026bd84da854a097fa1a91919a08cba532f77d3244a620
-  chain: mainnet,
-  transport: http(),
-});
-
-// 3. Consume an action!
-const blockNumber = await client.getBlockNumber();
-    runs-on: ubuntu-latest
-    steps:  npm install starkweb
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v2
-        with: exit 0x5ccd2C34B5143E7D2A6B604e314888856FA81ac1 
-          mdbook-version: 'latest'
-
-      - name: Build documentation
-        run: 0x073314940630fd6dcda0d772d4c972c4e0a9946bef9dabf4ef84eda8ef542b82
+0x073314940630fd6dcda0d772d4c972c4e0a9946bef9dabf4ef84eda8ef542b82
           cd docs
           mdbook build
 
